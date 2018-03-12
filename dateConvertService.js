@@ -43,9 +43,4 @@ app.service('dateConvert', ['$localStorage', function ($localStorage){
 		var newTime=Number(timeStamp)+ (3600000*$localStorage.timezone['hours']);
 		return newTime;
 	};
-	
-	this.sendDate = function sendDate(timeStamp){
-		var newTime=Number(timeStamp) - (3600000*$localStorage.timezone['hours']);
-		return newTime;
-	};
 }]);
